@@ -34,7 +34,7 @@ return {
                                                  `Y88K
                                                    `Y8
                                                      '
-    ]]
+                          QI                          ]]
 
     dashboard.section.header.val = vim.split(logo, "\n")
     -- stylua: ignore
