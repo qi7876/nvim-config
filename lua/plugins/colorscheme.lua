@@ -15,7 +15,7 @@ return {
                 -- percentage = 0.15, -- percentage of the shade to apply to the inactive window
             },
             styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-                comments = {}, -- Change the style of comments
+                comments = { "italic" }, -- Change the style of comments
                 conditionals = {},
                 loops = {},
                 functions = {},
