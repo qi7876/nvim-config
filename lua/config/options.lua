@@ -9,24 +9,3 @@ vim.opt.pumblend = 0
 vim.opt.scrolloff = 8
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-
-vim.o.clipboard = "unnamedplus"
-
-local function paste()
-    return {
-        vim.fn.split(vim.fn.getreg(""), "\n"),
-        vim.fn.getregtype(""),
-    }
-end
-
-vim.g.clipboard = {
-    name = "OSC 52",
-    copy = {
-        ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
-        ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
-    },
-    paste = {
-        ["+"] = paste,
-        ["*"] = paste,
-    },
-}
