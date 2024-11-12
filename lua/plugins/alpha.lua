@@ -14,7 +14,6 @@ return {
         dashboard.button("n", " " .. "> New file",        [[<cmd> ene <BAR> startinsert <cr>]]),
         dashboard.button("r", " " .. "> Recent files",    LazyVim.pick("oldfiles")),
         dashboard.button("g", " " .. "> Find text",       LazyVim.pick("live_grep")),
-        dashboard.button("p", " " .. "> Projects",        [[<cmd> Telescope projects <cr>]]),
         dashboard.button("c", " " .. "> Config",          LazyVim.pick.config_files()),
         dashboard.button("s", " " .. "> Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
         dashboard.button("q", " " .. "> Quit",            "<cmd> qa <cr>"),
@@ -26,7 +25,7 @@ return {
         dashboard.section.header.opts.hl = "Error"
         dashboard.section.buttons.opts.hl = "AlphaButtons"
         dashboard.section.footer.opts.hl = "AlphaFooter"
-        dashboard.opts.layout[1].val = 8
+        dashboard.opts.layout[1].val = 10
         return dashboard
     end,
     config = function(_, dashboard)

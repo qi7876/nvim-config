@@ -3,7 +3,6 @@
 -- Add any additional options here
 
 -- use telescope as picker
-vim.g.lazyvim_picker = "telescope"
 vim.o.expandtab = true
 vim.opt.relativenumber = false
 
