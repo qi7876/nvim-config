@@ -3,7 +3,7 @@ return {
     opts = {
         win = {
             -- don't allow the popup to overlap with the cursor
-            no_overlap = true,
+            no_overlap = false,
             -- width = 1,
             -- height = { min = 4, max = 25 },
             -- col = 0,
