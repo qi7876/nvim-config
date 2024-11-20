@@ -20,7 +20,7 @@ return {
             local user = vim.env.USER or "User"
             user = user:sub(1, 1):upper() .. user:sub(2)
             return {
-                model = "o1-mini-2024-09-12",
+                model = "claude-3.5-sonnet",
                 show_help = false,
                 question_header = "  " .. user .. " ",
                 answer_header = "  Copilot ",
