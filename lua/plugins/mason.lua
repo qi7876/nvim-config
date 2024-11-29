@@ -1,10 +1,11 @@
 return {
     {
         "mason.nvim",
+        lazy = false,
         opts = {
             ui = {
                 check_outdated_packages_on_open = true,
-                border = "single",
+                border = "rounded",
                 width = 0.8,
                 height = 0.8,
 

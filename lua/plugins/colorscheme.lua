@@ -1,7 +1,7 @@
 return {
     {
         "catppuccin/nvim",
-        lazy = true,
+        lazy = false,
         name = "catppuccin",
         opts = {
             flavour = "mocha", -- latte, frappe, macchiato, mocha
@@ -32,9 +32,7 @@ return {
             transparent_background = false,
             integrations = {
                 aerial = true,
-                alpha = true,
-                cmp = true,
-                dashboard = true,
+                blink_cmp = true,
                 dap = true,
                 dap_ui = true,
                 flash = true,
@@ -63,7 +61,6 @@ return {
                 noice = true,
                 notify = true,
                 semantic_tokens = true,
-                telescope = true,
                 treesitter = true,
                 treesitter_context = true,
                 which_key = true,
