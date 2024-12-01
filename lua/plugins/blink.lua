@@ -2,6 +2,12 @@ return {
     "saghen/blink.cmp",
     lazy = false,
     opts = {
+        keymap = { preset = "default" },
+        sources = {
+            completion = {
+                enabled_providers = { "lsp", "path", "snippets", "buffer" },
+            },
+        },
         windows = {
             autocomplete = {
                 border = "rounded",
