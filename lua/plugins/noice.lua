@@ -1,6 +1,5 @@
 return {
     "folke/noice.nvim",
-    lazy = false,
     opts = {
         presets = {
             bottom_search = true, -- use a classic bottom cmdline for search

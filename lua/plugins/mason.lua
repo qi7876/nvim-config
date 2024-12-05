@@ -1,7 +1,6 @@
 return {
     {
         "mason.nvim",
-        lazy = false,
         opts = {
             ui = {
                 check_outdated_packages_on_open = true,

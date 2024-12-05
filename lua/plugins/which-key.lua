@@ -1,6 +1,5 @@
 return {
     "folke/which-key.nvim",
-    lazy = false,
     opts = {
         win = {
             -- don't allow the popup to overlap with the cursor
