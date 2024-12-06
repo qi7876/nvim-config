@@ -1,7 +1,7 @@
 return {
     "saghen/blink.cmp",
     opts = {
-        keymap = { preset = "default" },
+        keymap = { preset = "enter", ["<Tab>"] = { "snippet_forward", "fallback" } },
         completion = {
             menu = {
                 border = "rounded",
@@ -10,15 +10,15 @@ return {
                     columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind" } },
                 },
             },
-        },
-        documentation = {
-            auto_show = false,
-            window = {
-                border = "rounded",
+            documentation = {
+                auto_show = false,
+                window = {
+                    border = "rounded",
+                },
             },
-        },
-        ghost_text = {
-            enabled = false,
+            ghost_text = {
+                enabled = false,
+            },
         },
     },
 }
