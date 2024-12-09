@@ -1,7 +1,6 @@
 return {
     "saghen/blink.cmp",
     opts = {
-        keymap = { preset = "enter", ["<Tab>"] = { "snippet_forward", "fallback" } },
         completion = {
             menu = {
                 border = "rounded",
@@ -16,9 +15,9 @@ return {
                     border = "rounded",
                 },
             },
-            ghost_text = {
-                enabled = false,
-            },
+            -- ghost_text = {
+            --     enabled = false,
+            -- },
         },
     },
 }
