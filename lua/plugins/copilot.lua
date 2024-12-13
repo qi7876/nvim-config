@@ -1,14 +1,15 @@
 return {
-    -- {
-    --     "zbirenbaum/copilot.lua",
-    --     event = "InsertEnter",
-    --     opts = {
-    --         suggestion = {
-    --             enabled = true,
-    --             auto_trigger = true,
-    --         },
-    --     },
-    -- },
+    {
+        "zbirenbaum/copilot.lua",
+        enable = false,
+        -- event = "InsertEnter",
+        -- opts = {
+        --     suggestion = {
+        --         enabled = true,
+        --         auto_trigger = true,
+        --     },
+        -- },
+    },
     {
         "CopilotC-Nvim/CopilotChat.nvim",
         branch = "canary",
