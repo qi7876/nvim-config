@@ -18,9 +18,9 @@ return {
                 winblend = 0, -- value between 0-100 0 for fully opaque and 100 for fully transparent
             },
         },
-        layout = {
-            width = { min = 20, max = 30 }, -- min and max width of the columns
-            spacing = 1, -- spacing between columns
-        },
+        -- layout = {
+        --     width = { min = 20, max = 30 }, -- min and max width of the columns
+        --     spacing = 1, -- spacing between columns
+        -- },
     },
 }
