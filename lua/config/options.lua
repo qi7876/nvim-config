@@ -10,28 +10,28 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.o.termguicolors = true
 
--- local function paste()
---     return function()
---         local content = vim.fn.getreg('"')
---         return vim.split(content, "\n")
---     end
--- end
---
--- if os.getenv("SSH_TTY") == nil then
---     -- local env
---     vim.opt.clipboard = "unnamedplus"
--- else
---     -- remote env
---     vim.opt.clipboard = "unnamedplus"
---     vim.g.clipboard = {
---         name = "OSC 52",
---         copy = {
---             ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
---             ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
---         },
---         paste = {
---             ["+"] = paste(),
---             ["*"] = paste(),
---         },
---     }
--- end
+local function paste()
+    return function()
+        local content = vim.fn.getreg('"')
+        return vim.split(content, "\n")
+    end
+end
+
+if os.getenv("SSH_TTY") == nil then
+    -- local env
+    vim.opt.clipboard = "unnamedplus"
+else
+    -- remote env
+    vim.opt.clipboard = "unnamedplus"
+    vim.g.clipboard = {
+        name = "OSC 52",
+        copy = {
+            ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+            ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+        },
+        paste = {
+            ["+"] = paste(),
+            ["*"] = paste(),
+        },
+    }
+end
