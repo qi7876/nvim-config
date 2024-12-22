@@ -9,6 +9,8 @@ vim.opt.scrolloff = 8
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.o.termguicolors = true
+vim.g.autoformat = true
+vim.g.snacks_animate = false
 
 local function paste()
     return function()
