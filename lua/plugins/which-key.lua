@@ -8,7 +8,7 @@ return {
             -- height = { min = 4, max = 25 },
             -- col = 0,
             -- row = math.huge,
-            border = "rounded",
+            border = "single",
             padding = { 0, 0 }, -- extra window padding [top/bottom, right/left]
             title = false,
             zindex = 1000,

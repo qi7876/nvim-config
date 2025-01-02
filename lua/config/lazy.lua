@@ -36,7 +36,7 @@ require("lazy").setup({
     }, -- automatically check for plugin updates
     -- ui config
     ui = {
-        border = "rounded",
+        border = "single",
         size = {
             width = 0.8,
             height = 0.8,

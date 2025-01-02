@@ -3,7 +3,7 @@ return {
     opts = {
         completion = {
             menu = {
-                border = "rounded",
+                border = "single",
                 winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpKindFunction,CursorLine:BlinkCmpMenuSelection,Search:None",
                 draw = {
                     columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind" } },
@@ -12,7 +12,7 @@ return {
             documentation = {
                 auto_show = false,
                 window = {
-                    border = "rounded",
+                    border = "single",
                 },
             },
             ghost_text = {
