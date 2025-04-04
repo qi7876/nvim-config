@@ -4,10 +4,6 @@ return {
         name = "catppuccin",
         opts = {
             flavour = "mocha", -- latte, frappe, macchiato, mocha
-            background = { -- :h background
-                light = "latte",
-                dark = "mocha",
-            },
             dim_inactive = {
                 enabled = false, -- dims the background color of inactive window
                 -- shade = "dark",
@@ -28,12 +24,17 @@ return {
                 operators = {},
                 -- miscs = {}, -- Uncomment to turn off hard-coded styles
             },
-            transparent_background = false,
+            color_overrides = {
+                mocha = {
+                    base = "#000000",
+                    mantle = "#000000",
+                    crust = "#000000",
+                },
+            },
+            transparent_background = true,
             integrations = {
                 aerial = true,
                 blink_cmp = true,
-                dap = true,
-                dap_ui = true,
                 flash = true,
                 grug_far = true,
                 gitsigns = true,
