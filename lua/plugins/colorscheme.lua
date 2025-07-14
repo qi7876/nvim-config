@@ -3,7 +3,7 @@ return {
         "catppuccin/nvim",
         name = "catppuccin",
         opts = {
-            flavour = "latte", -- latte, frappe, macchiato, mocha
+            flavour = "mocha", -- latte, frappe, macchiato, mocha
             dim_inactive = {
                 enabled = false, -- dims the background color of inactive window
                 -- shade = "dark",
@@ -24,7 +24,7 @@ return {
                 operators = {},
                 -- miscs = {}, -- Uncomment to turn off hard-coded styles
             },
-            transparent_background = false,
+            transparent_background = true,
             integrations = {
                 aerial = true,
                 blink_cmp = true,
