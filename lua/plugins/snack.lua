@@ -3,7 +3,7 @@ return {
     opts = {
         dashboard = {
             preset = {
-                header = [[NERV]],
+                header = [[Neovim]],
         -- stylua: ignore
         ---@type snacks.dashboard.Item[]
         keys = {
